@@ -19,7 +19,7 @@ public class LoginPageTest extends Sauce_Labs_BaseTest {
 	@BeforeMethod
 	public void setup() {
 		initialisation();
-		loginpg=new LoginPage();
+		loginpg = new LoginPage();
 	}
 
 	@Test
@@ -28,7 +28,6 @@ public class LoginPageTest extends Sauce_Labs_BaseTest {
 
 	}
 
-	
 	@AfterMethod
 	public void teardown() {
 //		driver.quit();
