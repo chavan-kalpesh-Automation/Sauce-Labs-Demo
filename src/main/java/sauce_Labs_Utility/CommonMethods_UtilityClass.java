@@ -188,6 +188,10 @@ public class CommonMethods_UtilityClass extends Sauce_Labs_BaseTest {
 		String phoneNumber = faker.name().lastName();
 		return phoneNumber;
 	}
+	public static String postalCode() {
+		String postalCode=faker.address().zipCode();
+		return postalCode;
+	}
 
 	/*
 	 * Window Handeling
