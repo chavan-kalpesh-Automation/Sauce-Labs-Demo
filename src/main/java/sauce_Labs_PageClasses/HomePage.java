@@ -84,26 +84,24 @@ public class HomePage extends Sauce_Labs_BaseTest {
 
 		commonUtility.waitElementTobeClickable(checkOutbtn);
 		checkOutbtn.click();
-		
-		firstName.click();
+
 		firstName.sendKeys(firstname);
-		
 		lastName.sendKeys(lastname);
 		postalCode.sendKeys(postalcode);
 
 		commonUtility.waitElementTobeClickable(continuebtn);
 		continuebtn.click();
-		
+
 		commonUtility.waitElementTobeClickable(finishbtn);
 
 		finishbtn.click();
-		
+
 		commonUtility.waitOnVisilibilityOfElement(orderCompleteText);
-		
-		String order_CompleteText=orderCompleteText.getText();
-		
+
+		String order_CompleteText = orderCompleteText.getText();
+
 		return order_CompleteText;
-		
+
 	}
 
 }
