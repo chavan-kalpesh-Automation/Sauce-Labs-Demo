@@ -38,7 +38,15 @@ public class HomePageTest extends Sauce_Labs_BaseTest {
 	}
 
 	@Test
-	public void Test() {
+	public void itemCheckoutFlow() {
+		String actualresult = homepg.verifyItemCheckout(prop.getProperty("itemname"), prop.getProperty("name"),
+				prop.getProperty("lname"), prop.getProperty("postalcode"));
+
+		Assert.assertEquals(actualresult, "THANK YOU FOR YOUR ORDER");
+	}
+
+	@Test
+	public void itemaddToCart() {
 		homepg.verifySingleItemaddToCartFromList(prop.getProperty("itemname"));
 	}
 }

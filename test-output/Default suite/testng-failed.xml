@@ -6,7 +6,7 @@
       <class name="sauce_Labs_TestClasses.HomePageTest">
         <methods>
           <include name="setup"/>
-          <include name="getItemList"/>
+          <include name="itemCheckoutFlow"/>
         </methods>
       </class> <!-- sauce_Labs_TestClasses.HomePageTest -->
     </classes>

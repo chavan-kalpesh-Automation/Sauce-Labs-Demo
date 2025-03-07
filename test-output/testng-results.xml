@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-06T18:47:27 IST" name="Default suite" finished-at="2025-03-06T18:47:38 IST" duration-ms="10758">
+  <suite started-at="2025-03-07T18:30:57 IST" name="Default suite" finished-at="2025-03-07T18:31:11 IST" duration-ms="14229">
     <groups>
     </groups>
-    <test started-at="2025-03-06T18:47:27 IST" name="Default test" finished-at="2025-03-06T18:47:38 IST" duration-ms="10758">
+    <test started-at="2025-03-07T18:30:57 IST" name="Default test" finished-at="2025-03-07T18:31:11 IST" duration-ms="14229">
       <class name="sauce_Labs_TestClasses.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@7cc0cdad]" started-at="2025-03-06T18:47:28 IST" name="setup" finished-at="2025-03-06T18:47:38 IST" duration-ms="10606" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@7c7b252e]" started-at="2025-03-07T18:30:57 IST" name="setup" finished-at="2025-03-07T18:31:09 IST" duration-ms="12039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getItemList()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@7cc0cdad]" started-at="2025-03-06T18:47:38 IST" name="getItemList" finished-at="2025-03-06T18:47:38 IST" duration-ms="68" status="PASS">
+        <test-method signature="itemCheckoutFlow()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@7c7b252e]" started-at="2025-03-07T18:31:09 IST" name="itemCheckoutFlow" finished-at="2025-03-07T18:31:11 IST" duration-ms="2043" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getItemList -->
+        </test-method> <!-- itemCheckoutFlow -->
       </class> <!-- sauce_Labs_TestClasses.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
