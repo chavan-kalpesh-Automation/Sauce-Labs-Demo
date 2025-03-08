@@ -194,7 +194,7 @@ public class CommonMethods_UtilityClass extends Sauce_Labs_BaseTest {
 	}
 
 	/*
-	 * Window Handeling
+	 * Window Handling
 	 */
 	public List<String> windowHandeling() {
 		// Get all window handles and hold them in a List
