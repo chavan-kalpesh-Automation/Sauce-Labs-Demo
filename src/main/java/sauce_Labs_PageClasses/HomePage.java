@@ -62,6 +62,9 @@ public class HomePage extends Sauce_Labs_BaseTest {
 	}
 
 	public void verifyItemListedOnHomePage() {
+		for(WebElement itemList:inventoryItemList) {
+			System.out.println(itemList.getText());
+		}
 
 	}
 
