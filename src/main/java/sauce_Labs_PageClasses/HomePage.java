@@ -1,5 +1,6 @@
 package sauce_Labs_PageClasses;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -8,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import sauce_Labs_TestBase.Sauce_Labs_BaseTest;
 import sauce_Labs_Utility.CommonMethods_UtilityClass;
+import sauce_Labs_Utility.ExcelUtils;
 
 public class HomePage extends Sauce_Labs_BaseTest {
 	CommonMethods_UtilityClass commonUtility;
@@ -62,9 +64,14 @@ public class HomePage extends Sauce_Labs_BaseTest {
 	}
 
 	public void verifyItemListedOnHomePage() {
-		for(WebElement itemList:inventoryItemList) {
-			System.out.println(itemList.getText());
+		List<String> itemNames = new ArrayList<>();
+		for (WebElement itemList : inventoryItemList) {
+			String itemName = itemList.getText();
+			System.out.println(itemName);
+			itemNames.add(itemName);
+
 		}
+		ExcelUtils.writeListToExcel("ItemList", itemNames);
 
 	}
 
