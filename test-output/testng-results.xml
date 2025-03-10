@@ -2,16 +2,16 @@
 <testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-10T17:10:39 IST" name="Default suite" finished-at="2025-03-10T17:10:51 IST" duration-ms="11697">
+  <suite started-at="2025-03-10T18:18:17 IST" name="Default suite" finished-at="2025-03-10T18:18:31 IST" duration-ms="13574">
     <groups>
     </groups>
-    <test started-at="2025-03-10T17:10:39 IST" name="Default test" finished-at="2025-03-10T17:10:51 IST" duration-ms="11697">
+    <test started-at="2025-03-10T18:18:17 IST" name="Default test" finished-at="2025-03-10T18:18:31 IST" duration-ms="13574">
       <class name="sauce_Labs_TestClasses.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@34123d65]" started-at="2025-03-10T17:10:39 IST" name="setup" finished-at="2025-03-10T17:10:49 IST" duration-ms="10553" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@34123d65]" started-at="2025-03-10T18:18:17 IST" name="setup" finished-at="2025-03-10T18:18:29 IST" duration-ms="12047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getItemList()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@34123d65]" started-at="2025-03-10T17:10:49 IST" name="getItemList" finished-at="2025-03-10T17:10:51 IST" duration-ms="1069" status="PASS">
+        <test-method signature="getItemList()[pri:0, instance:sauce_Labs_TestClasses.HomePageTest@34123d65]" started-at="2025-03-10T18:18:29 IST" name="getItemList" finished-at="2025-03-10T18:18:31 IST" duration-ms="1469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getItemList -->

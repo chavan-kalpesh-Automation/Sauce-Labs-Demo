@@ -19,6 +19,13 @@ public class HomePage extends Sauce_Labs_BaseTest {
 
 	@FindBy(xpath = "//div[@class='inventory_item_name']")
 	List<WebElement> inventoryItemList;
+	
+	@FindBy(xpath="//div[@class='inventory_item_desc']")
+	List<WebElement>descriptionItem;
+	
+	@FindBy(xpath="//div[@class='inventory_item_price']")
+	List<WebElement>priceItem;
+	
 
 	@FindBy(css = "//button[@class='btn_primary btn_inventory']")
 	List<WebElement> addToCart;
@@ -64,16 +71,23 @@ public class HomePage extends Sauce_Labs_BaseTest {
 	}
 
 	public void verifyItemListedOnHomePage() {
-		List<String> itemNames = new ArrayList<>();
-		for (WebElement itemList : inventoryItemList) {
-			String itemName = itemList.getText();
-			System.out.println(itemName);
-			itemNames.add(itemName);
+		   List<List<String>> productDetails = new ArrayList<>();
 
-		}
-		ExcelUtils.writeListToExcel("ItemList", itemNames);
+	        // Extract product details and store in list
+	        for (int i = 0; i < inventoryItemList.size(); i++) {
+	            String name = inventoryItemList.get(i).getText();
+	            String description = descriptionItem.get(i).getText();
+	            String price = priceItem.get(i).getText();
 
-	}
+	            System.out.println("Product: " + name + " | Description: " + description + " | Price: " + price);
+	            productDetails.add(List.of(name, description, price));
+	        }
+
+	        // Write data to Excel
+	        ExcelUtils.writeProductDetailsToExcel("Product List", productDetails);
+	    }
+
+	
 
 	public void verifySingleItemaddToCartFromList(String itemName) {
 		commonUtility = new CommonMethods_UtilityClass();
